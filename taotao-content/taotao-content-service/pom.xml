@@ -8,6 +8,8 @@
     <artifactId>taotao-content-service</artifactId>
     <packaging>war</packaging>
 
+
+
     <dependencies>
         <dependency>
             <groupId>com.taotao</groupId>

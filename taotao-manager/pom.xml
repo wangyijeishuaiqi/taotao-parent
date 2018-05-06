@@ -21,6 +21,12 @@
         <module>taotao-manager-interface</module>
         <module>taotao-manager-service</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

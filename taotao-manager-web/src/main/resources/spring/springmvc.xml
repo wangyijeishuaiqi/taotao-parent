@@ -34,7 +34,10 @@
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-manager-web"/>
 	<dubbo:registry protocol="zookeeper" address="zookeeper://39.105.15.184:2181?backup=39.105.15.184:2182,39.105.15.184:2183"/>
-	<dubbo:reference interface="com.taotao.service.ItemService" id="itemService" />
-	<dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService" />
-
+	<dubbo:reference interface="com.taotao.service.ItemService" id="itemService" url="192.168.6.1:20881"/>
+	<dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService"  url="192.168.6.1:20881"/>
+	<dubbo:reference interface="com.taotao.service.ItemParamService" id="itemParamService" url="192.168.6.1:20881"/>
+	<dubbo:reference interface="com.taotao.search.service.SearchItemService" id="searchItemService" url="192.168.6.1:20883"/>
+	<dubbo:reference interface="com.taotao.content.service.ContentCategoryService" id="contentCategoryService" url="192.168.6.1:20882"/>
+	<dubbo:reference interface="com.taotao.content.service.ContentService" id="contentService" url="192.168.6.1:20882"/>
 </beans>      

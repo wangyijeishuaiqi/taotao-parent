@@ -15,7 +15,7 @@
 	<mvc:annotation-driven />
 	<!-- 视图解析器 -->
 	<bean
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+			class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
@@ -25,5 +25,5 @@
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-portal-web"/>
 	<dubbo:registry protocol="zookeeper" address="zookeeper://39.105.15.184:2181?backup=39.105.15.184:2182,39.105.15.184:2183"/>
-	<dubbo:reference interface="com.taotao.content.service.ContentService" id="contentService"/>
+	<dubbo:reference interface="com.taotao.content.service.ContentService" id="contentService" />
 </beans>
