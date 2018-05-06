@@ -3,7 +3,7 @@ package com.taotao.pojo;
 import java.io.Serializable;
 import java.util.Date;
 
-public class TbItem implements Serializable{
+public class TbItem extends TbItemDesc implements Serializable{
     private Long id;
 
     private String title;
@@ -98,18 +98,22 @@ public class TbItem implements Serializable{
         this.status = status;
     }
 
+    @Override
     public Date getCreated() {
         return created;
     }
 
+    @Override
     public void setCreated(Date created) {
         this.created = created;
     }
 
+    @Override
     public Date getUpdated() {
         return updated;
     }
 
+    @Override
     public void setUpdated(Date updated) {
         this.updated = updated;
     }

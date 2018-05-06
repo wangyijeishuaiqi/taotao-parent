@@ -17,7 +17,6 @@ public class testJedisClientPool {
         //从容器中获取JedisClient对象
         JedisClient jedisClient = (JedisClient) ctx.getBean("jedisClientCluster");
         //使用JedisClient操作Redis
-        jedisClient.set("name", "wyj");
         String result = jedisClient.get("name");
         System.out.println(result);
     }

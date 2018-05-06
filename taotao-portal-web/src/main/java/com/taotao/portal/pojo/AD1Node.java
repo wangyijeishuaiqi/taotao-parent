@@ -1,5 +1,8 @@
 package com.taotao.portal.pojo;
 
+/**
+ * @author Administrator
+ */
 public class AD1Node {
 
 	private String srcB;

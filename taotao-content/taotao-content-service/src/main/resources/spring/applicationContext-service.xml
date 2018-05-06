@@ -26,7 +26,7 @@
 
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.taotao.content.service.ContentCategoryService" ref="contentCategoryServiceimpl" timeout="300000"/>
-    <dubbo:service interface="com.taotao.content.service.ContentService" ref="contentServiceImpl" timeout="300000"/>
+    <dubbo:service interface="com.taotao.content.service.ContentCategoryService" ref="contentCategoryServiceimpl" timeout="3000000"/>
+    <dubbo:service interface="com.taotao.content.service.ContentService" ref="contentServiceImpl" timeout="30000000"/>
 
 </beans>

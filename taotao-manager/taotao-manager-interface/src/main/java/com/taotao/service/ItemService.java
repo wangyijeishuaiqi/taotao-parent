@@ -23,4 +23,10 @@ public interface ItemService {
      */
     EasyUIDataGridResult getItemList(int page, int rows);
 
+
+    TbItemDesc getItemDescById(long itemId);
+
+    TaotaoResult createItem(TbItem tbItem, String desc);
+
+
 }

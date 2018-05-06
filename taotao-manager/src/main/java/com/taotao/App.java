@@ -4,10 +4,14 @@ package com.taotao;
  * Hello world!
  *
  */
-public class App 
+public class App
 {
-    public static void main( String[] args )
+    /**
+     * main方法
+     * @param args
+     */
+    public static void main(String[] args )
     {
-        System.out.println( "Hello World!" );
+        System.out.println("Hello World!");
     }
 }

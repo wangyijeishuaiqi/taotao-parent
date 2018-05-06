@@ -12,4 +12,6 @@ public interface ItemCatService {
      * @return
      */
     List<EasyUITreeNode> getItemCatList(long parentId);
+
+
 }

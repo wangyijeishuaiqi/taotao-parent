@@ -10,7 +10,7 @@
 
     <!-- 配置数据库连接池 -->
     <!-- 加载配置文件 -->
-    <context:property-placeholder location="classpath:properties/db.properties" />
+    <context:property-placeholder location="classpath:properties/*.properties" />
     <!-- 数据库连接池 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
           destroy-method="close">
@@ -32,5 +32,10 @@
     <!-- Mapper映射文件的包扫描器 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.taotao.mapper" />
+    </bean>
+
+       <bean id="connectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <description>JMS连接工厂</description>
+        <property name="brokerURL" value="tcp://39.105.15.184:61616" />
     </bean>
 </beans>
