@@ -1,17 +1,16 @@
 package com.taotao.service.impl;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.taotao.common.pojo.EasyUITreeNode;
 import com.taotao.mapper.TbItemCatMapper;
 import com.taotao.pojo.TbItemCat;
 import com.taotao.pojo.TbItemCatExample;
 import com.taotao.pojo.TbItemCatExample.Criteria;
 import com.taotao.service.ItemCatService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 商品分类管理Service
@@ -20,12 +19,12 @@ import com.taotao.service.ItemCatService;
  * <p>Company: www.itcast.cn</p> 
  * @version 1.0
  */
-@Service("itemCatServiceImpl")
+@Service
 public class ItemCatServiceImpl implements ItemCatService {
 
 	@Autowired
 	private TbItemCatMapper itemCatMapper;
-	
+
 	@Override
 	public List<EasyUITreeNode> getItemCatList(long parentId) {
 		//根据父节点id查询子节点列表

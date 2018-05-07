@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.Serializable;
 import java.util.List;
-
 /**
  * 淘淘商城自定义响应结构
  */
@@ -85,7 +84,7 @@ public class TaotaoResult implements Serializable{
 
     /**
      * 将json结果集转化为TaotaoResult对象
-     * 
+     *
      * @param jsonData json数据
      * @param clazz TaotaoResult中的object类型
      * @return
@@ -112,8 +111,8 @@ public class TaotaoResult implements Serializable{
     }
 
     /**
-     * 没有object对象的转化
-     * 
+     * 将json串转化为TaotaoResult对象
+     *
      * @param json
      * @return
      */
@@ -128,7 +127,7 @@ public class TaotaoResult implements Serializable{
 
     /**
      * Object是集合转化
-     * 
+     *
      * @param jsonData json数据
      * @param clazz 集合中的类型
      * @return
